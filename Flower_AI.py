@@ -69,7 +69,7 @@ validation_dataset = image_dataset_from_directory\
     batch_size = BATCH_SIZE
 )
 
-# The classes of flowers in the dataset.
+# The classes of FLOWERs in the dataset.
 # These correspond to the directory names in alphabetical order.
 class_names = train_dataset.class_names
 #print(class_names)
