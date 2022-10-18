@@ -34,7 +34,7 @@ def plot_metric(history, metric):
 
     plt.show()
 
-# Data Loading
+# Data Loading NEVER
 
 # URL of the source of the file that contains the dataset.
 _URL = "https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz"
