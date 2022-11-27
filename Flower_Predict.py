@@ -9,10 +9,33 @@ import numpy as np
 from numpy import expand_dims, vstack
 import matplotlib.pyplot as plt
 
+'''
+plt.figure(figsize=(20, 10))
+for images, labels in train_dataset.take(1):
+    for i in range(15):
+        ax = plt.subplot(3, 5, i + 1)
+
+        img_array = images[i].numpy().astype("uint8")
+        prediction = model.predict(np.array([img_array]))
+        prediction_name = class_names[np.argmax(prediction)]
+        real_name = class_names[np.argmax(labels[i])]
+
+        plt.imshow(img_array)
+        if prediction_name == real_name:
+            plt.title(f'real: {real_name}\npred:{prediction_name}', fontdict={'color': 'g'})
+        else:
+            plt.title(f'real: {real_name}\npred:{prediction_name}', fontdict={'color': 'r'})
+
+        plt.axis("off")
+
+'''
+
 IMG_SHAPE = 128
 
+# Load the model.
 flower_model = load_model("Flower_AI.h5")
 
+# Print a summary of the model.
 #print(flower_model.summary())
 
 test_directory = "Flowers"
